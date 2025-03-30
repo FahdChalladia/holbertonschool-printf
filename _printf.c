@@ -29,6 +29,8 @@ else if (format[i] == '%')
 write(1, "%", 1);
 count++;
 }
+else
+continue;
 }
 else
 {

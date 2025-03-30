@@ -43,9 +43,8 @@ return (count);
  */
 int print_number(int n)
 {
-int j, count = 0;
+int i, j, count = 0;
 char buffer[10];
-int i = 0;
 if (n == 0)
 {
 write(1, "0", 1);
