@@ -23,9 +23,7 @@ int print_string(char *str)
 {
 int count = 0;
 if (str == NULL)
-{
-write(1, "(null)", 6);
-return (6);
+return (0);
 }
 while (str[count] != '\0')
 {
