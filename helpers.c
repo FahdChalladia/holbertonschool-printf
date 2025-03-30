@@ -43,7 +43,7 @@ return (count);
  */
 int print_number(int n)
 {
-int count = 0;
+int j, count = 0;
 char buffer[10];
 int i = 0;
 if (n == 0)
@@ -63,7 +63,7 @@ buffer[i] = (n % 10) + '0';
 n /= 10;
 i++;
 }
-for (int j = i - 1; j >= 0; j--)
+for (j = i - 1; j >= 0; j--)
 {
 write(1, &buffer[j], 1);
 count++;
