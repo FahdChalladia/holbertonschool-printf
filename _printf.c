@@ -1,6 +1,5 @@
 #include "main.h"
-#include <unistd.h>
-#include <stdarg.h>
+
 
 /**
  * _printf - Prints output based on the format string.
@@ -12,9 +11,9 @@ int _printf(const char *format, ...)
 {
 int i, count = 0;
 va_list args;
+va_start(args, format);
 if (format == NULL)
 return (0);
-va_start(args, format);
 
 for (i = 0; format && format[i] != '\0'; i++)
 {
