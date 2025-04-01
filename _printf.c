@@ -1,6 +1,4 @@
 #include "main.h"
-
-
 /**
  * _printf - Prints output based on the format string.
  * @format: Format string to handle.

@@ -44,7 +44,7 @@ return (count);
 int print_number(int n)
 {
 int i, j, count = 0;
-char buffer[10];
+char buffer[11];
 if (n == 0)
 {
 write(1, "0", 1);
