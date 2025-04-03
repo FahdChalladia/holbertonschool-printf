@@ -44,7 +44,7 @@ return (count);
 int print_number(int n)
 {
 int i, j, count = 0;
-char buffer[11];
+char buffer[12];
 if (n == INT_MIN)
 {
 write(1, "-2147483648", 11);
