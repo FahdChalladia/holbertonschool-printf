@@ -14,6 +14,7 @@ int count = 0, i;
 va_list args;
 if (format == NULL)
 return (0);
+
 va_start(args, format);
 for (i = 0; format[i] != '\0'; i++)
 {

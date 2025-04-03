@@ -13,7 +13,7 @@
 int print_unsigned(unsigned int n)
 {
 {
-    int j;
+int j;
 int count = 0;
 char buffer[20];
 int i = 0;

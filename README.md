@@ -50,12 +50,6 @@ int main(void)
 }
 ```
 
-### Expected Output
-```
-Hello, world!
-Character: A
-Number: 42
-```
 
 ## Files
 | File         | Description |
@@ -73,4 +67,4 @@ Project repository: `holbertonschool-printf`
 
 ## Authors
 - Fahd Challadia
-- Mohamed raddaoui
+- Mohamed Raddaoui
