@@ -10,9 +10,10 @@
  *
  * Return: The number of characters printed.
  */
-int print_unsigned(unsigned int num)
+int print_unsigned(unsigned int n)
 {
 {
+    int j;
 int count = 0;
 char buffer[20];
 int i = 0;
@@ -27,7 +28,7 @@ buffer[i] = (n % 10) + '0';
 n /= 10;
 i++;
 }
-for (int j = i - 1; j >= 0; j--)
+for (j = i - 1; j >= 0; j--)
 {
 write(1, &buffer[j], 1);
 count++;

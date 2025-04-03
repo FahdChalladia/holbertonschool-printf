@@ -9,5 +9,7 @@ int print_unsigned(unsigned int num);
 int print_octal(unsigned int num);
 int print_hex(unsigned int num, char format);
 int print_pointer(void *ptr);
+int handle_format(char specifier, va_list args);
+
 
 #endif /* MAIN_H */
