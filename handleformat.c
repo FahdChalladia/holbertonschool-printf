@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdarg.h>
+#include <unistd.h>
 /**
  * handle_format - Handles the format specifier.
  * @specifier: The format specifier.
