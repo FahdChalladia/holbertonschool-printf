@@ -69,14 +69,13 @@ Project repository: `holbertonschool-printf`
 
 ## Authors
 - Fahd Challadia <[fahdchalladia](https://github.com/fahdchalladia)>
+- For more informations see [this link](./AUTHORS).
 
 ## License :lock:
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## ---
-
-
+## Acknowledgements 
 
 This program was written as part of the curriculum for Holberton School.
 Holberton School is a campus-based full-stack software engineering program
