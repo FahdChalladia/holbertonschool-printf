@@ -22,7 +22,7 @@ if (format[i] == '%' && format[i + 1] == '\0')
 {
 write(1, "", 0);
 }
-if else (format[i] == '%' && format[i + 1] != '\0')
+else if (format[i] == '%' && format[i + 1] != '\0')
 {
 i++;
 count += handle_format(format[i], args);
