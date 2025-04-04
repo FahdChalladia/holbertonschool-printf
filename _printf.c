@@ -20,7 +20,7 @@ for (i = 0; format[i] != '\0'; i++)
 {
 if (format[i] == '%' && format[i + 1] == '\0')
 {
-write(1, "%", 1);
+write(1, '%', 1);
 count ++;
 return (1);
 }
