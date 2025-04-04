@@ -17,12 +17,7 @@ count = 0;
 for (i = 0; format[i] != '\0'; i++)
 {
 if (!format || (format[0] == '%' && format[1] == '\0'))
-    return (-1);
-{
-write(1, "%", 1);
-count ++;
-return (1);
-}
+return (-1);
 else if (format[i] == '%' && format[i + 1] != '\0')
 {
 i++;
