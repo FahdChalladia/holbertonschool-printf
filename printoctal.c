@@ -8,7 +8,7 @@
  *
  * Return: The number of characters printed.
  */
-int print_octal(int num)
+int print_octal(unsigned num)
 {
 char buffer[20];
 int len = sprintf(buffer, "%o", num);
