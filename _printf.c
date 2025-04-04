@@ -14,14 +14,18 @@ int count = 0, i;
 va_list args;
 if (format == NULL )
 write(1, "", 0);
-else if (format[0] == '%' && format[1] == '\0')
-write(1, "", 0);
-else
-{
+
+
 va_start(args, format);
 for (i = 0; format[i] != '\0'; i++)
 {
-if (format[i] == '%' && format[i + 1] != '\0')
+if (format[i] == '%' && format[i + 1] == '\0')
+{
+write(1, "", 0);
+va_end(args);
+return (0);
+}
+else if (format[i] == '%' && format[i + 1] != '\0')
 {
 i++;
 count += handle_format(format[i], args);
@@ -32,9 +36,7 @@ write(1, &format[i], 1);
 count++;
 }
 }
-
 va_end(args);
-}
 return (count);
 }
 
