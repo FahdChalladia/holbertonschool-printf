@@ -20,8 +20,7 @@ for (i = 0; format[i] != '\0'; i++)
 {
 if (format[i] == '%' && format[i + 1] == '\0')
 {
-va_end(args);
-return(count);
+write(1, "", 0);
 }
 else if (format[i] == '%' && format[i + 1] != '\0')
 {
