@@ -10,7 +10,7 @@
  *
  * Return: The number of characters printed.
  */
-int print_unsigned(unsigned int n)
+int print_unsigned(int n)
 {
 {
 int j;
