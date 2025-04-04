@@ -23,6 +23,8 @@ if (format[i] == '%' && format[i + 1] == '\0')
 {
 write(1, "%", 1);
 count++;
+va_end(args);
+return (count);
 }
 else if (format[i] == '%' && format[i + 1] != '\0')
 {
