@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <unistd.h>
-#include "main.h"
+#include "main.h"qqqq
 
 /**
  * _printf - Prints output based on the format string.
@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 int count = 0, i;
 va_list args;
 if (format == NULL)
-return (0);
+return (NULL);
 
 va_start(args, format);
 for (i = 0; format[i] != '\0'; i++)
@@ -65,8 +65,9 @@ count++;
 }
 else
 {
+write(1, "%", 1);
 write(1, &specifier, 1);
-count++;
+count += 2;
 }
 return (count);
 }
