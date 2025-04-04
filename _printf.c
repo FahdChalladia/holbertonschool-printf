@@ -22,7 +22,8 @@ for (i = 0; format[i] != '\0'; i++)
 if (format[i] == '%' && format[i + 1] == '\0')
 {
 write(1, '%', 1);
-count++;
+write(1, "\0", 1);
+count += 2;
 }
 else if (format[i] == '%' && format[i + 1] != '\0')
 {
