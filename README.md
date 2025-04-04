@@ -20,8 +20,8 @@ This project is a custom implementation of the C standard library function `prin
 - `free` (man 3 free)
 - `va_start`, `va_end`, `va_copy`, `va_arg` (man 3 stdarg)
 
-## Features
-- Handles format specifiers: `%c`, `%s`, `%d`, `%i`, `%u`, `%o`, `%x`, `%X`, `%p`.
+## Features and requirements
+- Only handles those format specifiers: `%c`, `%s`, `%d`, `%i`, `%u`, `%o`, `%x`, `%p`.
 - Supports flag characters like `+`, ` `, and `#`.
 - Manages field width and precision.
 - Works with modifiers like `l` and `h`.
@@ -68,5 +68,19 @@ A `man_3_printf` file is included to document the function usage and behavior.
 Project repository: `holbertonschool-printf`
 
 ## Authors
-- Fahd Challadia
+- Fahd Challadia <[fahdchalladia](https://github.com/fahdchalladia)>
 
+## License :lock:
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## Acknowledgements :pray:
+
+The `_printf` function emulates functionality of the C standard library
+function `printf`. This README borrows from the Linux man page
+[printf(3)](https://linux.die.net/man/3/printf).
+
+This program was written as part of the curriculum for Holberton School.
+Holberton School is a campus-based full-stack software engineering program
+that prepares students for careers in the tech industry using project-based
+peer learning. For more information, visit [this link](https://www.holbertonschool.com/).
