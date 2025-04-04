@@ -9,7 +9,7 @@
  *
  * Return: The number of characters printed.
  */
-int print_hex(unsigned num, char format)
+int print_hex(unsigned int num, char format)
 {
 char buffer[20];
 if (format == 'x')
