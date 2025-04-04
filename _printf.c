@@ -16,7 +16,8 @@ if (format == NULL )
 write(1, "", 0);
 else if (format[0] == '%' && format[1] == '\0')
 write(1, "", 0);
-
+else
+{
 va_start(args, format);
 for (i = 0; format[i] != '\0'; i++)
 {
@@ -31,7 +32,9 @@ write(1, &format[i], 1);
 count++;
 }
 }
+
 va_end(args);
+}
 return (count);
 }
 
