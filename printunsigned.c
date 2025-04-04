@@ -5,13 +5,12 @@
 
 
 /**
- * print_unsigned - Prints an unsigned integer.
- * @num: The unsigned integer to print.
+ * print_unsigned_int - Prints an unsigned integer.
+ * @n: The unsigned integer to print.
  *
  * Return: The number of characters printed.
  */
 int print_unsigned_int(unsigned int n)
-{
 {
 int j;
 int count = 0;
@@ -34,5 +33,4 @@ write(1, &buffer[j], 1);
 count++;
 }
 return (count);
-}
 }
