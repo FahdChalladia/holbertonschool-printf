@@ -10,8 +10,9 @@
  */
 int _printf(const char *format, ...)
 {
-int count = 0, i;
+int count, i;
 va_list args;
+count = 0;
 if (format == NULL )
 write(1, "", 0);
 va_start(args, format);
@@ -20,9 +21,8 @@ for (i = 0; format[i] != '\0'; i++)
 if (format[i] == '%' && format[i + 1] == '\0')
 {
 _putchar("%");
-va_end(args);
 count ++;
-return (count);
+return (1);
 }
 else if (format[i] == '%' && format[i + 1] != '\0')
 {
