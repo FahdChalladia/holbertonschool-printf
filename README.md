@@ -74,11 +74,9 @@ Project repository: `holbertonschool-printf`
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## Acknowledgements :pray:
+## ---
 
-The `_printf` function emulates functionality of the C standard library
-function `printf`. This README borrows from the Linux man page
-[printf(3)](https://linux.die.net/man/3/printf).
+
 
 This program was written as part of the curriculum for Holberton School.
 Holberton School is a campus-based full-stack software engineering program
