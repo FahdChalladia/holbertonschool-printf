@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 int count = 0, i;
 va_list args;
 if (format == NULL)
-write(1, "", 1);
+write(1, "", 0);
 
 va_start(args, format);
 for (i = 0; format[i] != '\0'; i++)
